@@ -105,4 +105,1132 @@
       border: 1px solid rgba(255, 255, 255, 0.16);
       color: #ffffff;
       padding: 7px 10px;
-      
+      border-radius: 12px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    .glass-btn:active {
+      transform: scale(0.97);
+      background: rgba(255, 255, 255, 0.2);
+    }
+
+    .summary-card {
+      background: rgba(15, 23, 42, 0.55);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: 18px;
+      padding: 16px;
+      backdrop-filter: blur(8px);
+    }
+
+    .summary-label {
+      font-size: 0.72rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #cbd5e1;
+      font-weight: 700;
+    }
+
+    .summary-main-val {
+      font-size: 2.15rem;
+      font-weight: 800;
+      margin: 4px 0 14px;
+      letter-spacing: -0.03em;
+    }
+
+    .summary-split {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+      padding-top: 12px;
+      border-top: 1px solid rgba(255, 255, 255, 0.12);
+    }
+
+    .split-item span {
+      display: block;
+      font-size: 0.75rem;
+      color: #cbd5e1;
+      margin-bottom: 2px;
+    }
+
+    .split-item strong {
+      font-size: 1rem;
+      font-weight: 700;
+    }
+
+    .text-emerald { color: #34d399; }
+    .text-amber { color: #fbbf24; }
+    .text-red { color: #f87171; }
+
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 16px;
+    }
+
+    .section-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin: 4px 0 12px;
+    }
+
+    .section-title {
+      font-size: 0.85rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--text-muted);
+    }
+
+    .btn-primary-sm {
+      background: var(--primary);
+      color: #fff;
+      border: none;
+      padding: 8px 14px;
+      border-radius: 12px;
+      font-size: 0.85rem;
+      font-weight: 700;
+      cursor: pointer;
+    }
+
+    .account-list {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .account-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 16px;
+      box-shadow: var(--shadow);
+      cursor: pointer;
+      transition: transform 0.12s, border-color 0.15s;
+    }
+
+    .account-card:active {
+      transform: scale(0.985);
+      border-color: var(--primary);
+    }
+
+    .acct-card-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 12px;
+    }
+
+    .acct-name {
+      font-size: 1.08rem;
+      font-weight: 800;
+      margin: 0 0 3px;
+    }
+
+    .acct-type-badge {
+      display: inline-block;
+      font-size: 0.72rem;
+      font-weight: 700;
+      padding: 2px 8px;
+      border-radius: 999px;
+      background: var(--surface-2);
+      color: var(--text-muted);
+      border: 1px solid var(--border);
+    }
+
+    .acct-ledger-bal {
+      font-size: 1.3rem;
+      font-weight: 800;
+      text-align: right;
+    }
+
+    .acct-ledger-sub {
+      font-size: 0.7rem;
+      color: var(--text-muted);
+      text-align: right;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+
+    .acct-card-bottom {
+      display: flex;
+      justify-content: space-between;
+      padding-top: 10px;
+      border-top: 1px solid var(--border);
+      font-size: 0.8rem;
+      color: var(--text-muted);
+    }
+
+    .acct-card-bottom strong {
+      color: var(--text);
+    }
+
+    .search-box {
+      width: 100%;
+      padding: 12px 14px;
+      border-radius: 14px;
+      border: 1px solid var(--border);
+      background: var(--surface);
+      color: var(--text);
+      font-size: 0.95rem;
+      margin-bottom: 12px;
+      outline: none;
+    }
+
+    .filter-row {
+      display: flex;
+      gap: 8px;
+      overflow-x: auto;
+      padding-bottom: 6px;
+      margin-bottom: 12px;
+    }
+
+    .chip {
+      padding: 7px 14px;
+      border-radius: 999px;
+      border: 1px solid var(--border);
+      background: var(--surface);
+      color: var(--text);
+      font-size: 0.82rem;
+      font-weight: 700;
+      white-space: nowrap;
+      cursor: pointer;
+    }
+
+    .chip.active {
+      background: var(--header-bg);
+      color: #fff;
+      border-color: var(--header-bg);
+    }
+
+    body.dark .chip.active {
+      background: var(--primary);
+      border-color: var(--primary);
+    }
+
+    .tx-list {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .tx-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 13px 14px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      box-shadow: var(--shadow);
+    }
+
+    .status-toggle {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      border: 2px solid var(--warning);
+      background: rgba(217, 119, 6, 0.12);
+      color: var(--warning);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 900;
+      font-size: 0.9rem;
+      flex-shrink: 0;
+      cursor: pointer;
+    }
+
+    .status-toggle.cleared {
+      border-color: var(--primary);
+      background: rgba(5, 150, 105, 0.15);
+      color: var(--primary);
+    }
+
+    .tx-info {
+      flex: 1;
+      min-width: 0;
+      cursor: pointer;
+    }
+
+    .tx-payee {
+      font-weight: 700;
+      font-size: 0.98rem;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .tx-meta {
+      font-size: 0.78rem;
+      color: var(--text-muted);
+      margin-top: 3px;
+    }
+
+    .check-pill {
+      display: inline-block;
+      background: rgba(37, 99, 235, 0.12);
+      color: var(--accent);
+      font-weight: 700;
+      font-size: 0.72rem;
+      padding: 1px 6px;
+      border-radius: 6px;
+      margin-left: 4px;
+    }
+
+    .tx-amounts {
+      text-align: right;
+      cursor: pointer;
+    }
+
+    .tx-amt {
+      font-weight: 800;
+      font-size: 1rem;
+    }
+
+    .tx-amt.plus { color: var(--primary); }
+    .tx-amt.minus { color: var(--danger); }
+
+    .tx-run {
+      font-size: 0.74rem;
+      color: var(--text-muted);
+      margin-top: 2px;
+    }
+
+    .empty-state {
+      text-align: center;
+      padding: 40px 20px;
+      background: var(--surface);
+      border: 1px dashed var(--border);
+      border-radius: var(--radius);
+      color: var(--text-muted);
+      font-size: 0.92rem;
+      line-height: 1.5;
+    }
+
+    .fab {
+      position: fixed;
+      bottom: calc(22px + env(safe-area-inset-bottom));
+      right: 20px;
+      background: var(--accent);
+      color: #ffffff;
+      border: none;
+      border-radius: 999px;
+      padding: 15px 22px;
+      font-size: 1rem;
+      font-weight: 800;
+      box-shadow: 0 8px 22px rgba(37, 99, 235, 0.4);
+      cursor: pointer;
+      z-index: 50;
+    }
+
+    .fab:active { transform: scale(0.96); }
+
+    .modal-backdrop {
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.55);
+      display: none;
+      align-items: flex-end;
+      justify-content: center;
+      z-index: 100;
+    }
+
+    .modal-backdrop.open { display: flex; }
+
+    .modal-sheet {
+      background: var(--surface);
+      color: var(--text);
+      width: 100%;
+      max-width: 600px;
+      border-top-left-radius: 24px;
+      border-top-right-radius: 24px;
+      padding: 20px 18px calc(28px + env(safe-area-inset-bottom));
+      max-height: 90vh;
+      overflow-y: auto;
+      box-shadow: 0 -10px 30px rgba(0, 0, 0, 0.25);
+    }
+
+    .modal-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 16px;
+    }
+
+    .modal-title {
+      font-size: 1.15rem;
+      font-weight: 800;
+      margin: 0;
+    }
+
+    .close-btn {
+      background: var(--surface-2);
+      border: 1px solid var(--border);
+      color: var(--text);
+      border-radius: 50%;
+      width: 34px;
+      height: 34px;
+      font-size: 1.1rem;
+      cursor: pointer;
+    }
+
+    .type-switch {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 8px;
+      margin-bottom: 14px;
+    }
+
+    .type-opt {
+      padding: 10px 6px;
+      border-radius: 12px;
+      border: 1px solid var(--border);
+      background: var(--surface-2);
+      color: var(--text);
+      font-weight: 700;
+      font-size: 0.85rem;
+      text-align: center;
+      cursor: pointer;
+    }
+
+    .type-opt.active.expense { background: #fee2e2; border-color: #dc2626; color: #991b1b; }
+    .type-opt.active.deposit { background: #d1fae5; border-color: #059669; color: #065f46; }
+    .type-opt.active.check { background: #dbeafe; border-color: #2563eb; color: #1e40af; }
+
+    .form-group { margin-bottom: 12px; }
+    .form-group label {
+      display: block;
+      font-size: 0.78rem;
+      font-weight: 700;
+      color: var(--text-muted);
+      margin-bottom: 5px;
+      text-transform: uppercase;
+    }
+
+    .form-control {
+      width: 100%;
+      padding: 11px 12px;
+      border-radius: 12px;
+      border: 1px solid var(--border);
+      background: var(--surface-2);
+      color: var(--text);
+      font-size: 1rem;
+      outline: none;
+    }
+
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+    }
+
+    .btn-block {
+      width: 100%;
+      padding: 13px;
+      border-radius: 14px;
+      border: none;
+      font-size: 1rem;
+      font-weight: 800;
+      cursor: pointer;
+      margin-top: 8px;
+    }
+
+    .btn-save { background: var(--primary); color: #fff; }
+    .btn-danger { background: rgba(220, 38, 38, 0.12); color: var(--danger); }
+    .btn-secondary { background: var(--surface-2); color: var(--text); border: 1px solid var(--border); }
+
+    .hidden { display: none !important; }
+  </style>
+</head>
+<body>
+
+  <!-- VIEW 1: ACCOUNTS HOME SCREEN -->
+  <div id="homeView">
+    <div class="top-shell">
+      <div class="top-bar">
+        <div class="brand-title"><span class="brand-dot"></span> LedgerFlow</div>
+        <div class="icon-btn-group">
+          <button class="glass-btn" onclick="openBackupModal()">Backup</button>
+          <button class="glass-btn" onclick="toggleFullscreen()" id="fsBtnHome" title="Toggle Fullscreen">⛶</button>
+          <button class="glass-btn" onclick="toggleTheme()" id="themeBtnHome">🌙</button>
+        </div>
+      </div>
+
+      <div class="summary-card">
+        <div class="summary-label">Total Net Balance (All Accounts)</div>
+        <div class="summary-main-val" id="totalNetBal">$0.00</div>
+        <div class="summary-split">
+          <div class="split-item">
+            <span>Total Cleared</span>
+            <strong class="text-emerald" id="totalClearedBal">$0.00</strong>
+          </div>
+          <div class="split-item">
+            <span>Total Pending / Float</span>
+            <strong class="text-amber" id="totalPendingBal">$0.00</strong>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="section-header">
+        <span class="section-title">Your Accounts</span>
+        <button class="btn-primary-sm" onclick="openAccountModal()">+ Add Account</button>
+      </div>
+      <div class="account-list" id="accountCardsList"></div>
+    </div>
+  </div>
+
+  <!-- VIEW 2: SINGLE ACCOUNT REGISTER -->
+  <div id="registerView" class="hidden">
+    <div class="top-shell">
+      <div class="top-bar">
+        <button class="glass-btn" onclick="showHome()">← All Accounts</button>
+        <div class="icon-btn-group">
+          <button class="glass-btn" onclick="openEditCurrentAccount()">Edit Acct</button>
+          <button class="glass-btn" onclick="toggleFullscreen()" id="fsBtnReg" title="Toggle Fullscreen">⛶</button>
+          <button class="glass-btn" onclick="toggleTheme()" id="themeBtnReg">🌙</button>
+        </div>
+      </div>
+
+      <div class="summary-card">
+        <div class="summary-label" id="regAccountTitle">PRIMARY CHECKING</div>
+        <div class="summary-main-val" id="regLedgerBal">$0.00</div>
+        <div class="summary-split">
+          <div class="split-item">
+            <span>Cleared Bank</span>
+            <strong class="text-emerald" id="regClearedBal">$0.00</strong>
+          </div>
+          <div class="split-item">
+            <span>Pending / Float</span>
+            <strong class="text-amber" id="regPendingBal">$0.00</strong>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <input type="text" id="searchInput" class="search-box" placeholder="Search payee, check #, note..." oninput="renderRegister()" />
+
+      <div class="filter-row">
+        <button class="chip active" data-filter="all" onclick="setFilter('all', this)">All</button>
+        <button class="chip" data-filter="pending" onclick="setFilter('pending', this)">Pending</button>
+        <button class="chip" data-filter="cleared" onclick="setFilter('cleared', this)">Cleared</button>
+        <button class="chip" data-filter="check" onclick="setFilter('check', this)">Checks Only</button>
+      </div>
+
+      <div class="tx-list" id="txList"></div>
+    </div>
+
+    <button class="fab" onclick="openTxModal()">+ New Entry</button>
+  </div>
+
+  <!-- MODAL: ADD / EDIT TRANSACTION -->
+  <div class="modal-backdrop" id="txModal">
+    <div class="modal-sheet">
+      <div class="modal-header">
+        <h3 class="modal-title" id="txModalTitle">New Transaction</h3>
+        <button class="close-btn" onclick="closeModal('txModal')">✕</button>
+      </div>
+
+      <div class="type-switch">
+        <div class="type-opt active expense" id="opt-expense" onclick="setTxType('expense')">Expense (-)</div>
+        <div class="type-opt deposit" id="opt-deposit" onclick="setTxType('deposit')">Deposit (+)</div>
+        <div class="type-opt check" id="opt-check" onclick="setTxType('check')">Check (#)</div>
+      </div>
+
+      <div class="form-group">
+        <label>Payee / Description</label>
+        <input type="text" id="txPayee" class="form-control" placeholder="e.g., Starting Balance, Grocery Store" />
+      </div>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label>Amount ($)</label>
+          <input type="number" step="0.01" inputmode="decimal" id="txAmount" class="form-control" placeholder="0.00" />
+        </div>
+        <div class="form-group">
+          <label>Date</label>
+          <input type="date" id="txDate" class="form-control" />
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group" id="checkNumGroup">
+          <label>Check Number</label>
+          <input type="text" inputmode="numeric" id="txCheckNum" class="form-control" placeholder="e.g., 1001" />
+        </div>
+        <div class="form-group">
+          <label>Status</label>
+          <select id="txStatus" class="form-control">
+            <option value="pending">Pending / Float</option>
+            <option value="cleared">Cleared Bank</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label>Category / Memo (Optional)</label>
+        <input type="text" id="txNote" class="form-control" placeholder="Bills, Groceries, Transfer..." />
+      </div>
+
+      <button class="btn-block btn-save" onclick="saveTx()">Save Entry</button>
+      <button class="btn-block btn-danger hidden" id="deleteTxBtn" onclick="deleteTx()">Delete Entry</button>
+    </div>
+  </div>
+
+  <!-- MODAL: ADD / EDIT ACCOUNT -->
+  <div class="modal-backdrop" id="accountModal">
+    <div class="modal-sheet">
+      <div class="modal-header">
+        <h3 class="modal-title" id="acctModalTitle">Add Account</h3>
+        <button class="close-btn" onclick="closeModal('accountModal')">✕</button>
+      </div>
+
+      <div class="form-group">
+        <label>Account Name</label>
+        <input type="text" id="acctNameInput" class="form-control" placeholder="e.g., Savings, Travel Fund, Cash" />
+      </div>
+
+      <div class="form-group">
+        <label>Account Type</label>
+        <select id="acctTypeInput" class="form-control">
+          <option value="Checking">Checking</option>
+          <option value="Savings">Savings</option>
+          <option value="Credit Card">Credit Card</option>
+          <option value="Cash">Cash</option>
+        </select>
+      </div>
+
+      <button class="btn-block btn-save" onclick="saveAccount()">Save Account</button>
+      <button class="btn-block btn-danger hidden" id="deleteAcctBtn" onclick="deleteAccount()">Delete Account</button>
+    </div>
+  </div>
+
+  <!-- MODAL: BACKUP & RESTORE -->
+  <div class="modal-backdrop" id="backupModal">
+    <div class="modal-sheet">
+      <div class="modal-header">
+        <h3 class="modal-title">Backup & Restore Data</h3>
+        <button class="close-btn" onclick="closeModal('backupModal')">✕</button>
+      </div>
+
+      <p style="font-size:0.88rem; color:var(--text-muted); margin-top:0;">
+        Your records are stored locally on this device. Export a JSON backup regularly so you can restore your accounts anytime.
+      </p>
+
+      <button class="btn-block btn-save" onclick="exportJSON()">Download JSON Backup</button>
+      <button class="btn-block btn-secondary" onclick="exportCSV()">Download CSV Spreadsheet</button>
+
+      <div class="form-group" style="margin-top:16px;">
+        <label>Restore From JSON Backup File</label>
+        <input type="file" accept=".json" class="form-control" onchange="importJSON(event)" />
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const STORAGE_KEY = 'ledgerflow_v2_data';
+    const THEME_KEY = 'ledgerflow_theme';
+
+    let state = {
+      accounts: [
+        { id: 'acct_1', name: 'Primary Checking', type: 'Checking' }
+      ],
+      transactions: []
+    };
+
+    let currentAccountId = null;
+    let currentFilter = 'all';
+    let editingTxId = null;
+    let editingAcctId = null;
+    let selectedTxType = 'expense';
+
+    function init() {
+      const saved = localStorage.getItem(STORAGE_KEY);
+      if (saved) {
+        try {
+          const parsed = JSON.parse(saved);
+          if (parsed && Array.isArray(parsed.accounts) && parsed.accounts.length > 0) {
+            state = parsed;
+          }
+        } catch (e) {
+          console.error('Failed to parse saved data', e);
+        }
+      } else {
+        saveState();
+      }
+
+      if (localStorage.getItem(THEME_KEY) === 'dark') {
+        document.body.classList.add('dark');
+        updateThemeIcons();
+      }
+
+      document.addEventListener('fullscreenchange', updateFullscreenIcons);
+      updateFullscreenIcons();
+      renderHome();
+    }
+
+    function toggleFullscreen() {
+      if (!document.fullscreenElement) {
+        const el = document.documentElement;
+        if (el.requestFullscreen) {
+          el.requestFullscreen().catch(() => {});
+        }
+      } else if (document.exitFullscreen) {
+        document.exitFullscreen().catch(() => {});
+      }
+    }
+
+    function updateFullscreenIcons() {
+      const active = Boolean(document.fullscreenElement);
+      const label = active ? '✕' : '⛶';
+      const fsHome = document.getElementById('fsBtnHome');
+      const fsReg = document.getElementById('fsBtnReg');
+      if (fsHome) fsHome.textContent = label;
+      if (fsReg) fsReg.textContent = label;
+    }
+
+    function saveState() {
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
+    }
+
+    function toggleTheme() {
+      document.body.classList.toggle('dark');
+      const isDark = document.body.classList.contains('dark');
+      localStorage.setItem(THEME_KEY, isDark ? 'dark' : 'light');
+      updateThemeIcons();
+    }
+
+    function updateThemeIcons() {
+      const icon = document.body.classList.contains('dark') ? '☀️' : '🌙';
+      document.getElementById('themeBtnHome').textContent = icon;
+      document.getElementById('themeBtnReg').textContent = icon;
+    }
+
+    function formatMoney(num) {
+      const sign = num < 0 ? '-' : '';
+      return sign + '$' + Math.abs(num).toLocaleString('en-US', {
+        minimumFractionDigits: 2,
+        maximumFractionDigits: 2
+      });
+    }
+
+    function calcBalances(accountId = null) {
+      let ledger = 0;
+      let cleared = 0;
+      let pending = 0;
+
+      state.transactions.forEach(tx => {
+        if (accountId && tx.accountId !== accountId) return;
+        const signed = tx.type === 'deposit' ? Math.abs(tx.amount) : -Math.abs(tx.amount);
+        ledger += signed;
+        if (tx.status === 'cleared') {
+          cleared += signed;
+        } else {
+          pending += signed;
+        }
+      });
+
+      return { ledger, cleared, pending };
+    }
+
+    /* HOME VIEW */
+    function showHome() {
+      currentAccountId = null;
+      document.getElementById('registerView').classList.add('hidden');
+      document.getElementById('homeView').classList.remove('hidden');
+      renderHome();
+    }
+
+    function renderHome() {
+      const totals = calcBalances(null);
+      document.getElementById('totalNetBal').textContent = formatMoney(totals.ledger);
+      document.getElementById('totalClearedBal').textContent = formatMoney(totals.cleared);
+      document.getElementById('totalPendingBal').textContent = formatMoney(totals.pending);
+
+      const container = document.getElementById('accountCardsList');
+      container.innerHTML = '';
+
+      state.accounts.forEach(acct => {
+        const b = calcBalances(acct.id);
+        const txCount = state.transactions.filter(t => t.accountId === acct.id).length;
+
+        const card = document.createElement('div');
+        card.className = 'account-card';
+        card.onclick = () => openAccount(acct.id);
+
+        card.innerHTML = `
+          <div class="acct-card-top">
+            <div>
+              <div class="acct-name">${escapeHtml(acct.name)}</div>
+              <span class="acct-type-badge">${escapeHtml(acct.type || 'Checking')} • ${txCount} ${txCount === 1 ? 'entry' : 'entries'}</span>
+            </div>
+            <div>
+              <div class="acct-ledger-bal">${formatMoney(b.ledger)}</div>
+              <div class="acct-ledger-sub">Ledger</div>
+            </div>
+          </div>
+          <div class="acct-card-bottom">
+            <span>Cleared: <strong>${formatMoney(b.cleared)}</strong></span>
+            <span>Pending: <strong>${formatMoney(b.pending)}</strong></span>
+          </div>
+        `;
+        container.appendChild(card);
+      });
+    }
+
+    /* REGISTER VIEW */
+    function openAccount(acctId) {
+      currentAccountId = acctId;
+      currentFilter = 'all';
+      document.getElementById('searchInput').value = '';
+      document.querySelectorAll('.chip').forEach(c => c.classList.remove('active'));
+      document.querySelector('.chip[data-filter="all"]').classList.add('active');
+
+      document.getElementById('homeView').classList.add('hidden');
+      document.getElementById('registerView').classList.remove('hidden');
+      renderRegister();
+    }
+
+    function setFilter(filter, el) {
+      currentFilter = filter;
+      document.querySelectorAll('.chip').forEach(c => c.classList.remove('active'));
+      el.classList.add('active');
+      renderRegister();
+    }
+
+    function renderRegister() {
+      const acct = state.accounts.find(a => a.id === currentAccountId);
+      if (!acct) return showHome();
+
+      document.getElementById('regAccountTitle').textContent = acct.name.toUpperCase();
+      const b = calcBalances(acct.id);
+      document.getElementById('regLedgerBal').textContent = formatMoney(b.ledger);
+      document.getElementById('regClearedBal').textContent = formatMoney(b.cleared);
+      document.getElementById('regPendingBal').textContent = formatMoney(b.pending);
+
+      const acctTxs = state.transactions
+        .filter(t => t.accountId === acct.id)
+        .sort((a, b) => (a.date || '').localeCompare(b.date || '') || a.createdAt - b.createdAt);
+
+      let running = 0;
+      const withRun = acctTxs.map(tx => {
+        const signed = tx.type === 'deposit' ? Math.abs(tx.amount) : -Math.abs(tx.amount);
+        running += signed;
+        return { ...tx, signed, runBal: running };
+      }).reverse();
+
+      const q = document.getElementById('searchInput').value.trim().toLowerCase();
+      const filtered = withRun.filter(tx => {
+        if (currentFilter === 'pending' && tx.status !== 'pending') return false;
+        if (currentFilter === 'cleared' && tx.status !== 'cleared') return false;
+        if (currentFilter === 'check' && tx.type !== 'check') return false;
+        if (q) {
+          const hay = `${tx.payee} ${tx.checkNum || ''} ${tx.note || ''}`.toLowerCase();
+          if (!hay.includes(q)) return false;
+        }
+        return true;
+      });
+
+      const list = document.getElementById('txList');
+      list.innerHTML = '';
+
+      if (filtered.length === 0) {
+        list.innerHTML = `
+          <div class="empty-state">
+            No transactions yet in <strong>${escapeHtml(acct.name)}</strong>.<br/>
+            Tap <strong>+ New Entry</strong> below to record your starting balance or first transaction.
+          </div>
+        `;
+        return;
+      }
+
+      filtered.forEach(tx => {
+        const row = document.createElement('div');
+        row.className = 'tx-card';
+
+        const isCleared = tx.status === 'cleared';
+        const checkTag = tx.type === 'check' && tx.checkNum ? `<span class="check-pill">#${escapeHtml(tx.checkNum)}</span>` : '';
+        const notePart = tx.note ? ` • ${escapeHtml(tx.note)}` : '';
+
+        row.innerHTML = `
+          <button class="status-toggle ${isCleared ? 'cleared' : ''}" title="Toggle Cleared" onclick="toggleTxStatus('${tx.id}')">
+            ${isCleared ? '✓' : '•'}
+          </button>
+          <div class="tx-info" onclick="openTxModal('${tx.id}')">
+            <div class="tx-payee">${escapeHtml(tx.payee)} ${checkTag}</div>
+            <div class="tx-meta">${escapeHtml(tx.date || '')}${notePart}</div>
+          </div>
+          <div class="tx-amounts" onclick="openTxModal('${tx.id}')">
+            <div class="tx-amt ${tx.signed >= 0 ? 'plus' : 'minus'}">
+              ${tx.signed >= 0 ? '+' : '-'}$${Math.abs(tx.amount).toFixed(2)}
+            </div>
+            <div class="tx-run">Bal ${formatMoney(tx.runBal)}</div>
+          </div>
+        `;
+        list.appendChild(row);
+      });
+    }
+
+    function toggleTxStatus(txId) {
+      const tx = state.transactions.find(t => t.id === txId);
+      if (!tx) return;
+      tx.status = tx.status === 'cleared' ? 'pending' : 'cleared';
+      saveState();
+      renderRegister();
+    }
+
+    /* TRANSACTION MODAL */
+    function openTxModal(txId = null) {
+      editingTxId = txId;
+      const modal = document.getElementById('txModal');
+      const delBtn = document.getElementById('deleteTxBtn');
+
+      if (txId) {
+        const tx = state.transactions.find(t => t.id === txId);
+        if (!tx) return;
+        document.getElementById('txModalTitle').textContent = 'Edit Transaction';
+        setTxType(tx.type);
+        document.getElementById('txPayee').value = tx.payee;
+        document.getElementById('txAmount').value = tx.amount;
+        document.getElementById('txDate').value = tx.date;
+        document.getElementById('txCheckNum').value = tx.checkNum || '';
+        document.getElementById('txStatus').value = tx.status;
+        document.getElementById('txNote').value = tx.note || '';
+        delBtn.classList.remove('hidden');
+      } else {
+        document.getElementById('txModalTitle').textContent = 'New Entry';
+        setTxType('expense');
+        document.getElementById('txPayee').value = '';
+        document.getElementById('txAmount').value = '';
+        document.getElementById('txDate').value = new Date().toISOString().split('T')[0];
+        document.getElementById('txCheckNum').value = '';
+        document.getElementById('txStatus').value = 'pending';
+        document.getElementById('txNote').value = '';
+        delBtn.classList.add('hidden');
+      }
+
+      modal.classList.add('open');
+    }
+
+    function setTxType(type) {
+      selectedTxType = type;
+      ['expense', 'deposit', 'check'].forEach(t => {
+        document.getElementById('opt-' + t).classList.toggle('active', t === type);
+      });
+      document.getElementById('checkNumGroup').style.visibility = type === 'check' ? 'visible' : 'hidden';
+    }
+
+    function saveTx() {
+      const payee = document.getElementById('txPayee').value.trim();
+      const amount = parseFloat(document.getElementById('txAmount').value);
+      const date = document.getElementById('txDate').value;
+      const checkNum = document.getElementById('txCheckNum').value.trim();
+      const status = document.getElementById('txStatus').value;
+      const note = document.getElementById('txNote').value.trim();
+
+      if (!payee || isNaN(amount) || amount <= 0) {
+        alert('Please enter a valid payee and amount.');
+        return;
+      }
+
+      if (editingTxId) {
+        const tx = state.transactions.find(t => t.id === editingTxId);
+        if (tx) {
+          tx.type = selectedTxType;
+          tx.payee = payee;
+          tx.amount = amount;
+          tx.date = date;
+          tx.checkNum = selectedTxType === 'check' ? checkNum : '';
+          tx.status = status;
+          tx.note = note;
+        }
+      } else {
+        state.transactions.push({
+          id: 'tx_' + Date.now(),
+          accountId: currentAccountId,
+          type: selectedTxType,
+          payee,
+          amount,
+          date,
+          checkNum: selectedTxType === 'check' ? checkNum : '',
+          status,
+          note,
+          createdAt: Date.now()
+        });
+      }
+
+      saveState();
+      closeModal('txModal');
+      renderRegister();
+    }
+
+    function deleteTx() {
+      if (!editingTxId) return;
+      state.transactions = state.transactions.filter(t => t.id !== editingTxId);
+      saveState();
+      closeModal('txModal');
+      renderRegister();
+    }
+
+    /* ACCOUNT MODAL */
+    function openAccountModal(acctId = null) {
+      editingAcctId = acctId;
+      const delBtn = document.getElementById('deleteAcctBtn');
+
+      if (acctId) {
+        const acct = state.accounts.find(a => a.id === acctId);
+        if (!acct) return;
+        document.getElementById('acctModalTitle').textContent = 'Edit Account';
+        document.getElementById('acctNameInput').value = acct.name;
+        document.getElementById('acctTypeInput').value = acct.type || 'Checking';
+        delBtn.classList.toggle('hidden', state.accounts.length <= 1);
+      } else {
+        document.getElementById('acctModalTitle').textContent = 'New Account';
+        document.getElementById('acctNameInput').value = '';
+        document.getElementById('acctTypeInput').value = 'Checking';
+        delBtn.classList.add('hidden');
+      }
+
+      document.getElementById('accountModal').classList.add('open');
+    }
+
+    function openEditCurrentAccount() {
+      if (currentAccountId) openAccountModal(currentAccountId);
+    }
+
+    function saveAccount() {
+      const name = document.getElementById('acctNameInput').value.trim();
+      const type = document.getElementById('acctTypeInput').value;
+      if (!name) {
+        alert('Please enter an account name.');
+        return;
+      }
+
+      if (editingAcctId) {
+        const acct = state.accounts.find(a => a.id === editingAcctId);
+        if (acct) {
+          acct.name = name;
+          acct.type = type;
+        }
+      } else {
+        state.accounts.push({
+          id: 'acct_' + Date.now(),
+          name,
+          type
+        });
+      }
+
+      saveState();
+      closeModal('accountModal');
+      if (currentAccountId) {
+        renderRegister();
+      } else {
+        renderHome();
+      }
+    }
+
+    function deleteAccount() {
+      if (!editingAcctId || state.accounts.length <= 1) return;
+      if (!confirm('Delete this account and all of its entries?')) return;
+
+      state.accounts = state.accounts.filter(a => a.id !== editingAcctId);
+      state.transactions = state.transactions.filter(t => t.accountId !== editingAcctId);
+      saveState();
+      closeModal('accountModal');
+      showHome();
+    }
+
+    /* BACKUP & RESTORE */
+    function openBackupModal() {
+      document.getElementById('backupModal').classList.add('open');
+    }
+
+    function exportJSON() {
+      const blob = new Blob([JSON.stringify(state, null, 2)], { type: 'application/json' });
+      downloadFile(blob, `ledgerflow-backup-${new Date().toISOString().slice(0, 10)}.json`);
+    }
+
+    function exportCSV() {
+      const rows = [['Account', 'Date', 'Type', 'Check #', 'Payee', 'Amount', 'Status', 'Note']];
+      state.transactions.forEach(tx => {
+        const acct = state.accounts.find(a => a.id === tx.accountId);
+        const signed = tx.type === 'deposit' ? tx.amount : -tx.amount;
+        rows.push([
+          acct ? acct.name : '',
+          tx.date,
+          tx.type,
+          tx.checkNum || '',
+          `"${(tx.payee || '').replace(/"/g, '""')}"`,
+          signed.toFixed(2),
+          tx.status,
+          `"${(tx.note || '').replace(/"/g, '""')}"`
+        ]);
+      });
+      const csv = rows.map(r => r.join(',')).join('\n');
+      const blob = new Blob([csv], { type: 'text/csv' });
+      downloadFile(blob, `ledgerflow-register-${new Date().toISOString().slice(0, 10)}.csv`);
+    }
+
+    function downloadFile(blob, filename) {
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = filename;
+      a.click();
+      URL.revokeObjectURL(url);
+    }
+
+    function importJSON(event) {
+      const file = event.target.files[0];
+      if (!file) return;
+      const reader = new FileReader();
+      reader.onload = e => {
+        try {
+          const parsed = JSON.parse(e.target.result);
+          if (parsed && Array.isArray(parsed.accounts) && Array.isArray(parsed.transactions)) {
+            state = parsed;
+            saveState();
+            closeModal('backupModal');
+            showHome();
+            alert('Backup restored successfully.');
+          } else {
+            alert('Invalid backup file format.');
+          }
+        } catch (err) {
+          alert('Could not read backup file.');
+        }
+      };
+      reader.readAsText(file);
+    }
+
+    function closeModal(id) {
+      document.getElementById(id).classList.remove('open');
+    }
+
+    function escapeHtml(str) {
+      return String(str || '')
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;');
+    }
+
+    init();
+  </script>
+  <script>
+    if ('serviceWorker' in navigator && location.protocol.startsWith('http')) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('./sw.js').catch(() => {});
+      });
+    }
+  </script>
+</body>
+</html>
